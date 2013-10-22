@@ -1,0 +1,84 @@
+@import url('http://fonts.googleapis.com/css?family=Montaga|Tangerine:700')
+
+blue = #6db2c9
+green = #91d46a
+grey = #333
+red = #b33a3a
+
+html
+  background url('/img/background.jpeg') repeat center center fixed
+  background-size cover
+
+body
+  margin 0
+  padding 0
+
+#background
+  position absolute
+
+#container
+  font-family 'Tangerine' cursive
+  font-weight 700
+  z-index 2
+  text-align center
+  color #fff
+  height 300px
+
+  h1
+    font-size 72px
+    margin-top 20%
+
+  p
+    margin-top 8%
+    font-size 18px
+
+  nav
+    margin-top 8%
+    margin-bottom 10%
+    ul
+      display inline
+      li
+        display inline-block
+        margin-right 40px
+
+        a
+          reset-link()
+          border-bottom 1px green solid
+          &:hover
+            border-bottom 2px blue solid
+
+  nav, #summary
+    font-family 'Montaga' serif
+    font-weight 400
+
+#content
+  margin-top 10%
+  padding-top 3%
+  padding-bottom 3%
+  background-color lighten(grey, 30)
+  width 100%
+  color grey
+  border-top green 3px solid
+  text-align center
+
+  ul
+    display inline
+
+  li
+    height 50%
+    display inline-block
+    min-width 250px
+
+  #aboutimg
+    img
+      height 100px
+      border-radius 5px
+
+  #about
+    width 25%
+    border-right 2px solid blue
+    padding-right 15px
+
+  #support
+    margin-left 10%
+    margin-right 18%
